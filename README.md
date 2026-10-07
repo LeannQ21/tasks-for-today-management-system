@@ -1,33 +1,38 @@
 # Tasks for Today Management System
 
-A simple task-management web application built with CodeIgniter 4 and MySQL.
+A CodeIgniter 4 web application for organizing book-writing tasks. It provides public task viewing and authenticated task management.
 
 ## Features
 
-- Welcome dashboard that displays only tasks scheduled for today
-- Complete task list ordered by date
-- Demo user profile page
-- About page identifying the developer
-- Book-writing themed task records with pending, in-progress, and completed statuses
+- View today’s scheduled tasks
+- View all active tasks in date order
+- User login and logout
+- Create new tasks
+- Edit task title, date, and status
+- Soft archive tasks instead of permanently deleting them
+- Validation for required task title and date fields
+- Protected task-management pages for logged-in users only
 
 ## Technologies Used
 
-- PHP
+- PHP 8.2
 - CodeIgniter 4
 - MySQL
-- phpMyAdmin
+- XAMPP
 - HTML and CSS
 
-## Setup Instructions
+## Demo Login
 
-1. Place the project in your XAMPP `htdocs` folder.
-2. Start Apache and MySQL through XAMPP.
-3. Open phpMyAdmin at `http://localhost/phpmyadmin`.
-4. Import the included `tasks_for_today.sql` database export.
-5. Configure the `.env` file with the database name `tasks_for_today`.
-6. Run `php spark serve` inside the project folder.
-7. Open the displayed local URL in a browser.
+- Username: `leannquerubin`
+- Password: `BookTask2026`
 
-## Developer
+## Local Setup
 
-Leann Marie Querubin
+1. Clone or download this repository.
+2. Place the project inside `C:\xampp\htdocs`.
+3. Import `tasks_for_today.sql` through phpMyAdmin.
+4. Configure the database values in `.env`.
+5. Run the application:
+
+   ```bat
+   php spark serve --port 8081

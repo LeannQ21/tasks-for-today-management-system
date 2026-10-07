@@ -197,6 +197,11 @@
             <a href="<?= base_url('tasks') ?>">Task List</a>
             <a href="<?= base_url('profile') ?>">Profile</a>
             <a href="<?= base_url('about') ?>">About</a>
+            <?php if (session()->get('logged_in')): ?>
+                <a href="<?= site_url('logout') ?>">Logout</a>
+            <?php else: ?>
+                <a href="<?= site_url('login') ?>">Login</a>
+            <?php endif; ?>
         </div>
     </nav>
 
