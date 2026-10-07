@@ -8,7 +8,7 @@ class AuthController extends BaseController
 {
     public function login()
     {
-        return view('auth/login');
+        return view('tasks/login');
     }
 
     public function attemptLogin()
